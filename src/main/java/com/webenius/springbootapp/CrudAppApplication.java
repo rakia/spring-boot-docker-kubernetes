@@ -1,5 +1,4 @@
-package com.example.springboot;
-
+package com.webenius.springbootapp;
 
 import java.util.Arrays;
 
@@ -10,13 +9,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class Application {
+public class CrudAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(CrudAppApplication.class, args);
     }
 
-    @Bean
+    /*@Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
 
@@ -29,6 +28,5 @@ public class Application {
             }
 
         };
-    }
-
+    }*/
 }

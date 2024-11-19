@@ -1,4 +1,4 @@
-package com.example.springboot;
+package com.webenius.springbootapp;
 
 import org.junit.jupiter.api.Test;
 
