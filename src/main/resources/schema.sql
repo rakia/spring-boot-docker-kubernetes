@@ -1,10 +1,9 @@
 DROP TABLE IF EXISTS User; -- don't do this on a production environment
 
 CREATE TABLE User (
-    id varchar(255) NOT NULL,
+    id SERIAL PRIMARY KEY,
     name varchar(255) NOT NULL,
-    email varchar(255) NOT NULL,
-    PRIMARY KEY (id)
+    email varchar(255) NOT NULL
 );
 
 INSERT INTO User

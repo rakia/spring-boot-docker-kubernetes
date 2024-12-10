@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-         name: spring-boot-deployment
+  name: spring-boot-app
 spec:
   replicas: 1
   selector:
@@ -18,5 +18,10 @@ spec:
           imagePullPolicy: Never
           ports:
             - containerPort: 8080
-
-
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:postgresql://postgres:5432/mydatabase
+            - name: SPRING_DATASOURCE_USERNAME
+              value: user
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: password
